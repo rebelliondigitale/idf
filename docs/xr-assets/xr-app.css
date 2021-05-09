@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#idf-site {
+    overflow: hidden;
+    height: 100%;
+}
+
+#xr-site {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    pointer-events: none;
+}
+
+#xr-site.scrolled {
+    pointer-events: initial;
+}
+
+#xr-logo-canvas-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#xr-logo-canvas-model {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+#xr-logo-canvas, #xr-logo-canvas-model {
+    width: 100%;
+    height: 100%;
+}
+
+#xr-content {
+    background-color: rgb(68, 170, 60);
+    padding: 2em;
+    font-size: 30px;
+}
